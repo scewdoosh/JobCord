@@ -1,42 +1,54 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+
+.discord-btn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.17s ease, transform 0.1s ease;
+  text-decoration: none;
 }
 
-.ul { 
-  list-style: none;
+.discord-btn-primary {
+  background-color: #5865f2;
+  color: #fff;
+}
+.discord-btn-primary:hover {
+  background-color: #4752c4;
+  transform: translateY(-1px);
+}
+.discord-btn-primary:active {
+  background-color: #3c45a5;
+  transform: translateY(0);
 }
 
-.App-link {
-  color: #61dafb;
+.discord-btn-secondary {
+  background-color: #4f545c;
+  color: #fff;
+}
+.discord-btn-secondary:hover {
+  background-color: #686d73;
+  transform: translateY(-1px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.discord-btn-danger {
+  background-color: #f23f42;
+  color: #fff;
+}
+.discord-btn-danger:hover {
+  background-color: #a12d2f;
 }

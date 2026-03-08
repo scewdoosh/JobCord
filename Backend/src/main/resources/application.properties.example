@@ -1,3 +1,4 @@
 spring.application.name=Backend
-spring.mongodb.uri=mongodb+srv://rajdhok:amigo@cosa.hk7ge4s.mongodb.net/?appName=cosa
-spring.mongodb.database=cosa
+#your mongo db url (from MongoDB Atlas or Local)
+spring.data.mongodb.uri=mongodb+srv://USERNAME:PASSWORD@cluster.mongodb.net/?appName=appname
+spring.data.mongodb.database=dbname
