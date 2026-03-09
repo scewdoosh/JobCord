@@ -46,13 +46,11 @@ public class SearchRepoImplement implements SearchRepository{
 
 	@Override
 	public List<Post> findAll() {
-		// TODO Auto-generated method stub
 		return repo.findAll();
 	}
 
 	@Override
 	public Post save(Post post) {
-		// TODO Auto-generated method stub
 		return repo.save(post);
 	}
 	
