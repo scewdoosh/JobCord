@@ -141,4 +141,4 @@ http://localhost:3000
 
 ## Author
 
-**scewdoosh** — Backend built independently using Spring Boot & MongoDB
+**scewdoosh** — Backend built independently using Spring Boot & MongoDB.
