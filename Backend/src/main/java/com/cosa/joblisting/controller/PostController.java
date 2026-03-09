@@ -24,9 +24,6 @@ import jakarta.servlet.http.HttpServletResponse;
 public class PostController {
 	
 	@Autowired
-	private PostRepository repo;
-	
-	@Autowired
 	private SearchRepoImplement srepo;
 	
 	
@@ -38,7 +35,7 @@ public class PostController {
 	
 	@GetMapping("/posts")
 	public List<Post> getAllPosts(){
-		return repo.findAll();
+		return srepo.findAll();
 	}
 	
 	@GetMapping("/post/{text}")
@@ -50,7 +47,7 @@ public class PostController {
 	
 	@PostMapping("/post")
 	public Post addPost(@RequestBody Post post) {
-		return repo.save(post);
+		return srepo.save(post);
 	}
 	
 }

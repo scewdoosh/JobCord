@@ -17,7 +17,9 @@ import com.mongodb.client.MongoDatabase;
 
 @Service
 public class SearchRepoImplement implements SearchRepository{
-
+	@Autowired
+	private PostRepository repo;
+	
 	@Autowired
 	private MongoClient client;
 	
@@ -40,6 +42,18 @@ public class SearchRepoImplement implements SearchRepository{
 			    new Document("$limit", 5L)));
 		result.forEach(d -> list.add(converter.read(Post.class, d)));
 		return list;
+	}
+
+	@Override
+	public List<Post> findAll() {
+		// TODO Auto-generated method stub
+		return repo.findAll();
+	}
+
+	@Override
+	public Post save(Post post) {
+		// TODO Auto-generated method stub
+		return repo.save(post);
 	}
 	
 }
